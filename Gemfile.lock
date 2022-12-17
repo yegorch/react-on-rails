@@ -82,12 +82,14 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     concurrent-ruby (1.1.10)
+    connection_pool (2.3.0)
     crass (1.0.6)
     date (3.3.2)
     debug (1.7.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     erubi (1.11.0)
+    execjs (2.8.1)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -162,7 +164,14 @@ GEM
       rake (>= 12.2)
       thor (~> 1.0)
       zeitwerk (~> 2.5)
+    rainbow (3.1.1)
     rake (13.0.6)
+    react_on_rails (13.1.0)
+      addressable
+      connection_pool
+      execjs (~> 2.5)
+      rails (>= 5.2)
+      rainbow (~> 3.0)
     redis (4.8.0)
     regexp_parser (2.6.1)
     reline (0.3.2)
@@ -223,6 +232,7 @@ DEPENDENCIES
   jbuilder
   puma (~> 5.0)
   rails (~> 7.0.4)
+  react_on_rails
   redis (~> 4.0)
   selenium-webdriver
   sprockets-rails
